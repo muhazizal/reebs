@@ -1,7 +1,7 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'learn-nuxt-ts',
+    title: 'Reebs',
     htmlAttrs: {
       lang: 'en',
     },
@@ -47,4 +47,12 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
+
+  typescript: {
+    typeCheck: {
+      eslint: {
+        files: './**/*.{ts,js,vue}',
+      },
+    },
+  },
 }

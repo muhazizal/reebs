@@ -16,4 +16,5 @@ module.exports = {
     '<rootDir>/pages/**/*.vue',
   ],
   testEnvironment: 'jsdom',
+  testRegex: '(/__tests__/.*|(\\.|/)(test|spec))\\.(js?|ts?)$',
 }

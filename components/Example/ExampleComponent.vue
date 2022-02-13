@@ -7,17 +7,13 @@
 
 <script lang="ts">
 import { defineComponent, computed, ref } from '@vue/composition-api'
-
-interface User {
-  firstName: string
-  lastName: string
-}
+import { UserSettings } from './ExampleSettings'
 
 export default defineComponent({
-  name: 'HelloUser',
+  name: 'ExampleComponent',
   props: {
     user: {
-      type: Object as () => User,
+      type: Object as () => UserSettings,
       required: true,
     },
   },

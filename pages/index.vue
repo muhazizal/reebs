@@ -1,6 +1,6 @@
 <template>
   <div>
-    <user-dummy :user="user" />
+    <example-component :user="user" />
   </div>
 </template>
 

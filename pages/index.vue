@@ -1,11 +1,23 @@
 <template>
-  <div>index page</div>
+  <div>
+    <user-dummy :user="user" />
+  </div>
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
+import { defineComponent, ref } from '@vue/composition-api'
 
-export default Vue.extend({
+export default defineComponent({
   name: 'IndexPage',
+  setup() {
+    const user = ref({
+      firstName: 'Muhammad Aziz',
+      lastName: 'Al-Assad',
+    })
+
+    return {
+      user,
+    }
+  },
 })
 </script>
